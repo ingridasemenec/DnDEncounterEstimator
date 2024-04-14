@@ -1,0 +1,12 @@
+,Step,Loss
+0,initial,24748
+1,removal of standard classes,18590
+2,removal of combat instances with no combat,14824
+3,removal of combats with no health information,13775
+4,removal of extreme pre-combat hp,13774
+5,removal of extreme post-combat hp,13774
+6,removal of party sizes 10 and above,13762
+7,removal of parties with levels above 20,12865
+8,removal of parties with either no or too high health,11847
+9,removal of parties with ACs above 38,11844
+10,removal of parties with an ability score above 22,10842
