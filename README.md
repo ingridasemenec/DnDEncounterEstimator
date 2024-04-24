@@ -15,6 +15,17 @@ FIREBALL is released for research purposes only under a CC-BY-4.0 license.
 ## This Repository
 
 In this repository, we present scripts to extract, filter, and process data from the raw FIREBALL data files.
+The Filters removed instances of:
+ * non-standard player classes 
+ * combat instances with no combat
+ * combats with no health information
+ *  extreme pre-combat hp
+ *  extreme post-combat hp
+ *  party sizes 10 and above
+ *  parties with levels above 20
+ *  parties with either no or too high health
+ *  parties with ACs above 38
+ * parties with an ability score above 22
 
 ## Data Processing
 
