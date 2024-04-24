@@ -19,11 +19,12 @@ In this repository, we present scripts to extract, filter, and process data from
 ## Data Processing
 
 [extractor.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/extractor.ipynb) script takes in the raw FIREBALL data json files and extracts the wanted features, saving them as a new database in a csv file.
-
-[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) script ....
-
+&#8595;
+[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) script takes the extracted csv filere
+&#8595;
 [scaling.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/scaling.ipynb) script...
 
+## Modeling
 
-ADD dependencies of each script like: extractor (does what) run first on raw data, then run filtering on the csv produced by extractor, then run scaling on the csv produced by filtering. so it is clear how to reproduce the results.
-Then brief descriptions of all the modeling files and that they run on final csv file.
+
+
