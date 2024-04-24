@@ -50,7 +50,13 @@ The Filters removed instances of:
 
 &#8595;
 
-[scaling.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/scaling.ipynb) script...
+[scaling.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/scaling.ipynb) script takes the extracted and filtered csv file and applies scaling to the monster level, and spell slots. 
+
+The scaling to monster level is applied using encounter multipliers described in Dungeon Master's Guide page 82. 
+
+The spell slot scaling was applied using spell point values listed in the Dungeon Master's Guide on page 289. 
+
+After the scaling is applied the script creates new columns with the `weighted_moster_level` and the scaled spell slot levels and adds it to the database producing the last version of the csv file ready to be analyzed.
 
 ## Modeling
 
