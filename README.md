@@ -30,7 +30,7 @@ Each saved instance starts with the associated `combat_id` and for each `combat_
 - automation_run
 - combat_state_update
 ```
-We were mostly interested in `command` and `combat_state_update` events. The `command` event contained information for players and monsters joining combat initiatives, which was a tool to count active participants in a given combat. The `combat_state_update` events contained all active combatant information such as their character sheet statistics, as well as `human_reable` part, which had a string containing the updated player and monster hp ratios. This way by checking the last instance of `coombat_state_update` we were able to extract the last recorded hp of each player post-combat. 
+We were mostly interested in `command` and `combat_state_update` events. The `command` event contained information for players and monsters joining combat initiatives, which was a tool to count active participants in a given combat. The `combat_state_update` events contained all active combatant information such as their character sheet statistics, as well as the `human_readable` part, which had a string containing the updated player and monster hp ratios. This way by checking the last instance of `combat_state_update` we were able to extract the last recorded hp of each player post-combat. 
 
 &#8595;
 
