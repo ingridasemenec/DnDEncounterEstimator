@@ -15,6 +15,16 @@ FIREBALL is released for research purposes only under a CC-BY-4.0 license.
 ## This Repository
 
 In this repository, we present scripts to extract, filter, and process data from the raw FIREBALL data files.
+
+
+## Data Processing
+
+[extractor.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/extractor.ipynb) script takes in the raw FIREBALL data json files and extracts the wanted features, saving them as a new database in a csv file.
+
+&#8595;
+
+[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) script takes the extracted csv file applies the set filters and one-hot encodes all the player classes.
+
 The Filters removed instances of:
  * non-standard player classes 
  * combat instances with no combat
@@ -26,14 +36,6 @@ The Filters removed instances of:
  *  parties with either no or too high health
  *  parties with ACs above 38
  * parties with an ability score above 22
-
-## Data Processing
-
-[extractor.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/extractor.ipynb) script takes in the raw FIREBALL data json files and extracts the wanted features, saving them as a new database in a csv file.
-
-&#8595;
-
-[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) script takes the extracted csv file
 
 &#8595;
 
