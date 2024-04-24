@@ -60,5 +60,13 @@ After the scaling is applied the script creates new columns with the `weighted_m
 
 ## Modeling
 
+[CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb)
 
+[DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
+
+[models_aky.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/models_aky.ipynb)
+
+[NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb)
+
+[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb)
 
