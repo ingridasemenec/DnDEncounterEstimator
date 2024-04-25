@@ -72,5 +72,5 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 [NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb)
 
-[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) script tests two binary classification methods to determine the probability of total party kill (TPK) or no TPK classes. The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Random Forest classifiers (RF) were tested. When looking at the ROC curve the LR model performed better than RF. The classifier can be improved with more data that includes TPKs. 
+[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) script tests two binary classification methods to determine the probability of total party kill (TPK). The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Random Forest classifiers (RF) were tested. When looking at the ROC curve the LR model performed better than RF. The classifier can be improved with more data that includes TPKs. 
 
