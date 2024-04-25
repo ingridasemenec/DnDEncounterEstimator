@@ -59,18 +59,27 @@ Regarding spell slot scaling, it employs spell point values provided in the Dung
 
 Once the scaling is implemented, the script generates new columns for the `weighted_monster_level` and the scaled spell slot levels, appending them to the database. This results in the final version of the CSV file prepared for analysis.
 
-## Modeling
 
+## EDA
 [CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb) script is designed to test the Challenge Rating system using the processed data. The notebook contains: 
 * EDA regarding the `party_total_level`, `weighted_monster_level`, `party_size`, `monster_number`
 * Classical Modeling including 'Linear Regression', 'Random Forest Regressor', 'Gradient Boosting Regressor', and 'XGBoost Regressor'.
 * Splitting the data into level ranges, trying to figure out if there are different types of correlations at certain stages of gameplay. 
 
+## Modeling
+### Classical Models
 [DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
 
+### Kane Models
 [models_aky.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/models_aky.ipynb)
 
-[NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb)
+### Neural Network
+[NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb) : This script reads the filtered and scaled data and trains two deep neural networks with different architectures. Both the models are trained with validation early-stopping and dropout. Each of these are then followed by SHAP analysis to obtain the feature importance.
+The OnePathNN model trains with 40 input features while the TwoPathNN model separates the player-related features and monster-related features as shown in the schematics.
+![OnePathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/one_path_nn.onnx.svg)
+![TwoPathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/one_path_nn.onnx.svg)
 
+
+### TPK Classification
 [TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) script tests two binary classification methods to determine the probability of total party kill (TPK). The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Random Forest classifiers (RF) were tested. When looking at the ROC curve the LR model performed better than RF. The classifier can be improved with more data that includes TPKs. 
 
