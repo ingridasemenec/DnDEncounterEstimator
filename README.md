@@ -61,9 +61,10 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 ## Modeling
 
-[CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb) script is designed to test the Challenge Rating system using the processed data file. The notebook contains: 
+[CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb) script is designed to test the Challenge Rating system using the processed data. The notebook contains: 
 * EDA regarding the `party_total_level`, `weighted_monster_level`, `party_size`, `monster_number`
-* Classical Modeling including 'Linear Regression', 'Random Forest Regressor', 'Gradient Boosting Regressor', and 'XGBoost Regressor'. 
+* Classical Modeling including 'Linear Regression', 'Random Forest Regressor', 'Gradient Boosting Regressor', and 'XGBoost Regressor'.
+* Splitting the data into level ranges, trying to figure out if there are different types of correlations at certain stages of gameplay. 
 
 [DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
 
@@ -71,5 +72,5 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 [NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb)
 
-[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb)
+[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) script tests two binary classification methods to determine the probability of total party kill (TPK) or no TPK classes. The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Random Forest classifiers (RF) were tested. When looking at the ROC curve the LR model performed better than RF. The classifier can be improved with more data that includes TPKs. 
 
