@@ -61,7 +61,9 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 ## Modeling
 
-[CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb)
+[CR_ClassicalModels_levelranges.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/CR_ClassicalModels_levelranges.ipynb) script is designed to test the Challenge Rating system using the processed data file. The notebook contains: 
+* EDA regarding the `party_total_level`, `weighted_monster_level`, `party_size`, `monster_number`
+* Classical Modeling including 'Linear Regression', 'Random Forest Regressor', 'Gradient Boosting Regressor', and 'XGBoost Regressor'. 
 
 [DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
 
