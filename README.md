@@ -77,8 +77,8 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 [NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb) : This script reads the filtered and scaled data and trains two deep neural networks with different architectures. Both the models are trained with validation early-stopping and dropout. Each of these are then followed by SHAP analysis to obtain the feature importance.
 The OnePathNN model trains with 40 input features while the TwoPathNN model separates the player-related features and monster-related features as shown in the schematics.
 
-![OnePathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/one_path_nn.onnx.svg)
-![TwoPathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/two_path_nn.onnx.svg)
+![OnePathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/one_path_nn.svg)
+![TwoPathNN](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NN_files/two_path_nn.svg)
 
 
 ### TPK Classification
