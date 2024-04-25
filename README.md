@@ -14,12 +14,13 @@ FIREBALL is released for research purposes only under a CC-BY-4.0 license.
 
 ## This Repository
 
-In this repository, we present scripts to extract, filter, and process data from the raw FIREBALL data files.
+Within this repository, we provide scripts designed to extract, filter, and manipulate data sourced from the raw FIREBALL data files. Following data processing, we offer a collection of scripts aimed at modeling specific features to predict combat success or the probability of a total party kill (TPK).
 
 
 ## Data Processing
 
-[extractor.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/extractor.ipynb) script takes in the raw FIREBALL data json files and extracts the wanted features, saving them as a new database in a csv file.
+[extractor.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/extractor.ipynb) processes the raw FIREBALL data in JSON format, extracting the desired features and storing them as a new database in a CSV file.
+
 Each saved instance starts with the associated `combat_id` and for each `combat_id` script looks for `event_type`. Each event is one of the following :
 ```text
 - message
@@ -34,7 +35,7 @@ We were mostly interested in `command` and `combat_state_update` events. The `co
 
 &#8595;
 
-[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) script takes the extracted csv file applies the set filters and one-hot encodes all the player classes.
+[filtering.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/filtering.ipynb) processes the extracted CSV file, applying predefined filters and performing one-hot encoding for all player classes. Filtering is essential to eliminate evident outliers, "homebrew" game content, and instances where information was improperly recorded in the raw data.
 
 The Filters removed instances of:
  * non-standard player classes 
@@ -50,13 +51,13 @@ The Filters removed instances of:
 
 &#8595;
 
-[scaling.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/scaling.ipynb) script takes the extracted and filtered csv file and applies scaling to the monster level, and spell slots. 
+[scaling.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/scaling.ipynb) script processes the extracted and filtered CSV file, applying scaling to the monster level and spell slots.
 
-The scaling to monster level is applied using encounter multipliers described in Dungeon Master's Guide page 82. 
+For monster-level scaling, it utilizes encounter multipliers as outlined in the Dungeon Master's Guide on page 82. 
 
-The spell slot scaling was applied using spell point values listed in the Dungeon Master's Guide on page 289. 
+Regarding spell slot scaling, it employs spell point values provided in the Dungeon Master's Guide on page 289. 
 
-After the scaling is applied the script creates new columns with the `weighted_moster_level` and the scaled spell slot levels and adds it to the database producing the last version of the csv file ready to be analyzed.
+Once the scaling is implemented, the script generates new columns for the `weighted_monster_level` and the scaled spell slot levels, appending them to the database. This results in the final version of the CSV file prepared for analysis.
 
 ## Modeling
 
