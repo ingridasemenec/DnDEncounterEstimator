@@ -68,8 +68,7 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 ## Modeling
 ### Classical Models
-[DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
-* Utilized Measures, Metrics, and Correlation to investage and validate features before modeling.
+[DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb) : utilizes measures, metrics, and correlation to investigate and validate features before modeling.
 * PyCarat was used for directional guidance for what models to build 
 * The Final Classical Models Used:
 * XgBoost
