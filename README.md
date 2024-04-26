@@ -68,7 +68,18 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 
 ## Modeling
 ### Classical Models
-[DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb) : Ingrida maybe add a sentence to describe this one?
+[DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
+* Utilized Measures, Metrics, and Correlation to investage and validate features before modeling.
+* PyCarat was used for directional guidance for what models to build 
+* The Final Classical Models Used:
+* XgBoost
+* AdaBoost
+* GradientBoost
+* Random Forest
+* LightGBM
+* PLS
+* OLS
+* MSE, RMSE, and R2 were used for the scoring for the model
 
 ### Dimensionality Reduction
 [dimensionality_reduction.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/dimensionality_reduction.ipynb) : script reduces the features to attempt to improve model fitting. It primarily employs PCA and PLS.
