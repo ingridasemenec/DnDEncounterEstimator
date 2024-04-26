@@ -72,15 +72,14 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 * Utilized Measures, Metrics, and Correlation to investage and validate features before modeling.
 * PyCarat was used for directional guidance for what models to build 
 * The Final Classical Models Used:
-* - XgBoost
-* - AdaBoost
-* - GradientBoost
-* - Random Forest
-* - LightGBM
-* - PLS
-* - OLS
+* XgBoost
+* AdaBoost
+* GradientBoost
+* Random Forest
+* LightGBM
+* PLS
+* OLS
 * MSE, RMSE, and R2 were used for the scoring for the model
-
 
 ### Dimensionality Reduction
 [dimensionality_reduction.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/dimensionality_reduction.ipynb)
