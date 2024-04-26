@@ -92,7 +92,7 @@ The OnePathNN model trains with 40 input features while the TwoPathNN model sepa
 
 
 ### TPK Classification
-[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) : script tests two binary classification methods to determine the probability of total party kill (TPK). The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Random Forest classifiers (RF) were tested. When looking at the ROC curve the LR model performed better than RF. The classifier can be improved with more data that includes TPKs. 
+[TPK_classification.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/TPK_classification.ipynb) : script tests two binary classification methods to determine the probability of total party kill (TPK). The data contains fewer cases of TPK, therefore the no-TPK cases were randomly undersampled. Logistic Regression (LR) and Decission Tree classifiers (DT) were tested. When looking at the ROC curve the LR model performed better than DT. The classifier can be improved with more data that includes TPKs. 
 
 ![]() <img src="https://github.com/ingridasemenec/DnDFireballProject/blob/main/roccurve.png" width=60%>
 
