@@ -70,8 +70,9 @@ Once the scaling is implemented, the script generates new columns for the `weigh
 ### Classical Models
 [DnD Classical Models.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/DnD%20Classical%20Models.ipynb)
 
-### Kane Models
-[models_aky.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/models_aky.ipynb)
+### Dimensionality Reduction
+[dimensionality_reduction.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/dimensionality_reduction.ipynb)
+This script aims to take the data and see if reducing the features down to a smaller amount improve model fitting. It primarily employs PCA and PLS.
 
 ### Neural Network
 [NeuralNetwork.ipynb](https://github.com/ingridasemenec/DnDFireballProject/blob/main/NeuralNetwork.ipynb) : This script reads the filtered and scaled data and trains two deep neural networks with different architectures. Both the models are trained with validation early-stopping and dropout. Each of these are then followed by SHAP analysis to obtain the feature importance.
